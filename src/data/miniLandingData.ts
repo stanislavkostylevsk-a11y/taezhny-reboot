@@ -306,7 +306,7 @@ export function generateMiniLandingPageHtml(): string {
       <!-- Визуальная карточка курса -->
       <div class="p-4 rounded-2xl border border-stone-800 bg-stone-900/70 flex flex-col sm:flex-row items-center gap-4 text-left">
         <img 
-          src="/taezhny-logo.svg" 
+          src="./taezhny-logo.svg" 
           alt="Таёжный Перезапуск" 
           class="w-20 h-20 rounded-xl object-contain border border-stone-700 shrink-0 p-1"
         />

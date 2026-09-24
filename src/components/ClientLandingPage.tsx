@@ -178,8 +178,8 @@ export const ClientLandingPage: React.FC = () => {
           <a href="#" className="flex items-center gap-3 group">
             <div className="h-11 w-11 rounded-2xl overflow-hidden bg-stone-900 border border-emerald-500/40 flex items-center justify-center text-emerald-300 shadow-lg shadow-emerald-950/60 group-hover:border-emerald-400 transition-all p-0.5">
               <img 
-                src="/taezhny-logo.svg" 
-                alt="Таёжный Перезапуск" 
+                src="./taezhny-logo.svg" 
+                alt="Таёжный Перезапуск"  
                 className="w-full h-full object-contain rounded-xl"
               />
             </div>
@@ -369,8 +369,8 @@ export const ClientLandingPage: React.FC = () => {
                 {/* Photo / Visual Emblem - Compact and proportional */}
                 <div className="relative overflow-hidden rounded-2xl border border-stone-800 h-60 sm:h-72 w-full bg-gradient-to-b from-emerald-950/50 to-stone-950 flex flex-col items-center justify-center p-6 text-center">
                   <img
-                    src="/taezhny-logo.svg"
-                    alt="Таёжный Перезапуск"
+                    src="./taezhny-logo.svg"
+                    alt="Таёжный Перезапуск" 
                     className="w-32 h-32 object-contain drop-shadow-2xl mb-2"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent pointer-events-none"></div>
@@ -1003,15 +1003,19 @@ export const ClientLandingPage: React.FC = () => {
           
           {/* Top Brand & Navigation Line */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-stone-800">
-            <div className="space-y-1">
-              <div className="flex items-center gap-2 text-stone-200">
-                <Trees className="h-4 w-4 text-emerald-400" />
-                <span className="font-['Cinzel'] font-bold text-stone-100">ТАЁЖНЫЙ ПЕРЕЗАПУСК</span>
-                <span>• Оздоровительный онлайн-курс</span>
+                        <div className="flex items-center gap-3.5">
+              <div className="h-12 w-12 rounded-2xl overflow-hidden bg-stone-900 border border-emerald-500/40 p-1 flex items-center justify-center shrink-0 shadow-md shadow-emerald-950/40">
+                <img src="./taezhny-logo.svg" alt="Логотип Таёжный Перезапуск" className="w-full h-full object-contain" />
               </div>
-              <p className="text-[11px] text-stone-400">
-                Горный Алтай • Натуральные дикоросы и физиологический запуск оттока желчи
-              </p>
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-2 text-stone-200">
+                  <span className="font-['Cinzel'] font-bold text-stone-100 text-base tracking-wide">ТАЁЖНЫЙ ПЕРЕЗАПУСК</span>
+                  <span className="text-stone-400 text-xs hidden sm:inline">• Оздоровительный онлайн-курс</span>
+                </div>
+                <p className="text-[11px] text-stone-400">
+                  Горный Алтай • Натуральные дикоросы и физиологический запуск оттока желчи
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 text-xs text-stone-400">
