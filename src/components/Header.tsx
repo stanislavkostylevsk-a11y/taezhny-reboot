@@ -1,3 +1,4 @@
+import { TAEZHNY_LOGO_DATA_URI } from "../constants/logo";
 import React from "react";
 import { Trees, Download, Sparkles, Instagram, Flame, FileText, Cpu, BookOpen, Globe } from "lucide-react";
 import confetti from "canvas-confetti";
@@ -36,10 +37,8 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onOpenE
         <div className="flex h-20 items-center justify-between gap-4">
           {/* Brand Identity */}
           <div className="flex items-center gap-3.5">
-            <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-900 via-stone-900 to-amber-950 p-0.5 shadow-lg shadow-emerald-950/50">
-              <div className="flex h-full w-full items-center justify-center rounded-[14px] bg-stone-900 border border-emerald-500/20">
-                <Trees className="h-6 w-6 text-emerald-400" />
-              </div>
+            <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-900 via-stone-900 to-amber-950 p-1 shadow-lg shadow-emerald-950/50 border border-emerald-500/40 shrink-0">
+              <img src={TAEZHNY_LOGO_DATA_URI} alt="Логотип Таёжный Перезапуск" className="w-full h-full object-contain" />
               <span className="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-amber-500 text-[9px] font-bold text-stone-950">
                 AI
               </span>

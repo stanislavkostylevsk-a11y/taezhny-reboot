@@ -1,4 +1,4 @@
-import taezhnyLogo from "../assets/taezhny-logo.svg";
+import { TAEZHNY_LOGO_DATA_URI } from "../constants/logo";
 import React, { useState, useEffect } from "react";
 import { 
   Trees, 
@@ -179,7 +179,7 @@ export const ClientLandingPage: React.FC = () => {
           <a href="#" className="flex items-center gap-3 group">
             <div className="h-11 w-11 rounded-2xl overflow-hidden bg-stone-900 border border-emerald-500/40 flex items-center justify-center text-emerald-300 shadow-lg shadow-emerald-950/60 group-hover:border-emerald-400 transition-all p-0.5">
               <img 
-                src={taezhnyLogo} 
+                src={TAEZHNY_LOGO_DATA_URI} 
                 alt="Таёжный Перезапуск"  
                 className="w-full h-full object-contain rounded-xl"
               />
@@ -370,7 +370,7 @@ export const ClientLandingPage: React.FC = () => {
                 {/* Photo / Visual Emblem - Compact and proportional */}
                 <div className="relative overflow-hidden rounded-2xl border border-stone-800 h-60 sm:h-72 w-full bg-gradient-to-b from-emerald-950/50 to-stone-950 flex flex-col items-center justify-center p-6 text-center">
                   <img
-                    src={taezhnyLogo}
+                    src={TAEZHNY_LOGO_DATA_URI}
                     alt="Таёжный Перезапуск" 
                     className="w-32 h-32 object-contain drop-shadow-2xl mb-2"
                   />
@@ -1006,7 +1006,7 @@ export const ClientLandingPage: React.FC = () => {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-stone-800">
                         <div className="flex items-center gap-3.5">
               <div className="h-12 w-12 rounded-2xl overflow-hidden bg-stone-900 border border-emerald-500/40 p-1 flex items-center justify-center shrink-0 shadow-md shadow-emerald-950/40">
-                <img src={taezhnyLogo} alt="Логотип Таёжный Перезапуск" className="w-full h-full object-contain" />
+                <img src={TAEZHNY_LOGO_DATA_URI} alt="Логотип Таёжный Перезапуск" className="w-full h-full object-contain" />
               </div>
               <div className="space-y-0.5">
                 <div className="flex items-center gap-2 text-stone-200">
