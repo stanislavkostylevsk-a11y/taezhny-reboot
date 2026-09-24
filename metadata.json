@@ -1,0 +1,6 @@
+{
+  "name": "Ждан Таёжный — Протокол «Таёжный Перезапуск»",
+  "description": "Очистите ЖКТ, перезапустите печень и верните лёгкость в теле за 14 дней на сибирских дикоросах от травника Ждана Таёжного. Всего 990 ₽.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

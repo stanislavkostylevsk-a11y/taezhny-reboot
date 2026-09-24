@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#14281f"/>
+      <stop offset="60%" stop-color="#0c1712"/>
+      <stop offset="100%" stop-color="#070c09"/>
+    </radialGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <!-- Emerald Leaf Gradient -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="50%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Dewdrop Gradient -->
+    <linearGradient id="waterGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#A7F3D0" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#34D399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComponentTransfer in="blur" result="glow1">
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="glow1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background with rounded squircle / circular safe zone -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Fine Ring -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#10B981" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="8 6"/>
+  
+  <!-- Main Badge Ring -->
+  <circle cx="256" cy="256" r="222" fill="none" stroke="url(#goldGrad)" stroke-width="3" filter="url(#goldGlow)"/>
+  <circle cx="256" cy="256" r="214" fill="#0d1b14" fill-opacity="0.7" stroke="#047857" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Decorative Stars on Ring -->
+  <polygon points="256,42 258,49 265,51 258,53 256,60 254,53 247,51 254,49" fill="#FCD34D"/>
+  <polygon points="256,452 258,459 265,461 258,463 256,470 254,463 247,461 254,459" fill="#FCD34D"/>
+
+  <!-- Inner Organic Taiga Tree & Vitality Elements -->
+  <g transform="translate(0, -10)">
+    
+    <!-- Sun/Warmth Glow in background -->
+    <circle cx="256" cy="210" r="85" fill="#F59E0B" fill-opacity="0.08" filter="url(#glow)"/>
+    <circle cx="256" cy="210" r="50" fill="#10B981" fill-opacity="0.12" filter="url(#glow)"/>
+
+    <!-- Geometric Sun Rays (Spiritual Vitality) -->
+    <g stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.45">
+      <line x1="256" y1="110" x2="256" y2="124"/>
+      <line x1="256" y1="296" x2="256" y2="310"/>
+      <line x1="163" y1="203" x2="177" y2="203"/>
+      <line x1="335" y1="203" x2="349" y2="203"/>
+      <line x1="190" y1="137" x2="200" y2="147"/>
+      <line x1="322" y1="137" x2="312" y2="147"/>
+      <line x1="190" y1="269" x2="200" y2="259"/>
+      <line x1="322" y1="269" x2="312" y2="259"/>
+    </g>
+
+    <!-- Cedar / Pine Silhouette (Siberian Taiga Tree Crown) -->
+    <!-- Layer 1: Top Tier -->
+    <path d="M 256 122 L 282 165 L 268 165 L 298 208 L 276 208 L 312 258 L 275 258 L 275 295 L 237 295 L 237 258 L 200 258 L 236 208 L 214 208 L 244 165 L 230 165 Z" 
+          fill="url(#emeraldGrad)" 
+          stroke="#064E3B" 
+          stroke-width="2"
+          filter="url(#glow)"/>
+
+    <!-- Internal highlights on Cedar Tree for depth -->
+    <path d="M 256 126 L 276 163 L 264 163 L 292 205 L 272 205 L 305 254 L 256 254 Z" 
+          fill="#34D399" 
+          fill-opacity="0.35"/>
+
+    <!-- Healthy Herbal Leaf Swirl (Wrapping around the tree base) -->
+    <path d="M 180 255 C 195 210, 240 195, 275 215 C 310 235, 335 215, 345 195 C 340 240, 295 275, 256 270 C 215 265, 190 280, 180 255 Z"
+          fill="url(#emeraldGrad)"
+          opacity="0.9"/>
+
+    <!-- Vein in leaf -->
+    <path d="M 195 250 Q 256 240 330 205" 
+          fill="none" 
+          stroke="#A7F3D0" 
+          stroke-width="2" 
+          stroke-linecap="round"
+          opacity="0.8"/>
+
+    <!-- Pure Water / Dew Drop (Symbolizing clean bile flow & morning water) -->
+    <g transform="translate(256, 218) scale(0.95)">
+      <path d="M 0 -38 C 18 -12, 28 8, 28 24 C 28 40, 15 52, 0 52 C -15 52, -28 40, -28 24 C -28 8, -18 -12, 0 -38 Z"
+            fill="url(#waterGrad)"
+            stroke="#FCD34D"
+            stroke-width="2"/>
+      <!-- Dewdrop Light Reflection -->
+      <ellipse cx="-8" cy="18" rx="6" ry="14" transform="rotate(-25 -8 18)" fill="#FFFFFF" opacity="0.65"/>
+      <circle cx="9" cy="32" r="3.5" fill="#FFFFFF" opacity="0.5"/>
+    </g>
+
+    <!-- Cedar Trunk -->
+    <rect x="249" y="278" width="14" height="26" rx="4" fill="#B45309" stroke="#78350F" stroke-width="1.5"/>
+
+    <!-- Siberian Mountains Wave at bottom base -->
+    <path d="M 160 304 L 205 275 L 245 298 L 290 268 L 352 304" 
+          fill="none" 
+          stroke="url(#goldGrad)" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          opacity="0.75"/>
+  </g>
+
+  <!-- Typography: TAYOZHNY PEREZAPUSK -->
+  <!-- Top Arching Brand Name -->
+  <text x="256" y="375" 
+        text-anchor="middle" 
+        font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" 
+        font-size="25" 
+        font-weight="bold" 
+        letter-spacing="5" 
+        fill="#FFFFFF">
+    ТАЁЖНЫЙ
+  </text>
+  
+  <text x="256" y="405" 
+        text-anchor="middle" 
+        font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" 
+        font-size="20" 
+        font-weight="bold" 
+        letter-spacing="7" 
+        fill="url(#goldGrad)">
+    ПЕРЕЗАПУСК
+  </text>
+
+  <!-- Subtitle: Health Protocol & Creator -->
+  <text x="256" y="432" 
+        text-anchor="middle" 
+        font-family="'Inter', 'Arial', sans-serif" 
+        font-size="11.5" 
+        font-weight="600" 
+        letter-spacing="2.5" 
+        fill="#A7F3D0" 
+        opacity="0.9">
+    ОЗДОРОВИТЕЛЬНЫЙ КУРС • 14 ДНЕЙ
+  </text>
+
+  <!-- Circular Border Accents Left & Right -->
+  <circle cx="120" cy="385" r="3" fill="#FCD34D"/>
+  <circle cx="392" cy="385" r="3" fill="#FCD34D"/>
+  <line x1="85" y1="385" x2="110" y2="385" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.6"/>
+  <line x1="398" y1="385" x2="427" y2="385" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.6"/>
+</svg>
