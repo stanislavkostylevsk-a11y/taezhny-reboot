@@ -32,9 +32,9 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
-      - name: Build site
+      - name: Build static site
         run: npx vite build
 
       - name: Setup Pages
